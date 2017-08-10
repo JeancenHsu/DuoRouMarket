@@ -1,0 +1,277 @@
+*{
+    margin: 0;padding: 0;
+    list-style: none;
+}
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background: #f5f5f5;
+    font-size: 14px;
+	font-family: 'Microsoft YaHei';    
+}
+
+a,a:hover,a:visited{
+	text-decoration: none;
+}
+
+.clear{
+	clear:both;
+}
+/*head导航条*/
+.head{
+    position: absolute;
+    top:0;
+    left:0px;
+	width:100%;
+	height: 90px;
+    background: white;
+    position: fixed;
+    opacity: 0.9;
+    z-index: 999;
+}
+
+.head-Con{
+    width:1200px;
+    height: 90px;
+    margin: 0 auto;
+}
+
+.head .nav{
+    width:510px;
+    height: 90px;
+    float: right;
+}
+
+.head .a1{
+    display: block;
+    width:40px;
+    height: 90px;
+    color:#333333;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    line-height: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.head .a2{
+    display: block;
+    height: 90px;
+    color:#333333;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    line-height: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width:120px;   
+}
+
+.head .nav a:hover{
+ 
+    color:#77f93e;
+    font-weight: bold;
+    border-bottom: 4px solid #77f93e;
+}
+
+
+/*搜索框*/
+#search_box {
+    margin: -55px 500px;
+    width: 201px; 
+    height: 31px; 
+    background: url(../images/bg_search_box.jpg); 
+} 
+#search_box #s { 
+    float: left; 
+    padding: 0; 
+    margin: 2px 3px; 
+    border: 0; 
+    width: 159px; 
+    background: none; 
+    font-size: 1.6rem; 
+} 
+#search_box #go {
+    border:none;
+    cursor: pointer;
+    background: url(../images/btn_search_box.jpg);
+    width: 27px;
+    height: 24px;
+    float: right; 
+    margin: 3px 4px 0 0; 
+} 
+
+.cart_title{
+    width:1200px;
+    height:30px;
+    margin: 110px 100px;
+    padding-bottom: 30px;
+    background: #f5f5f5;
+    border-bottom: 2px solid #afb1ac;
+}
+
+.cart_title p{
+    display: block;
+    color:#333333;
+    width:160px;
+    text-align: left;
+    float:left;
+    font-size: 30px;
+    border-left: 8px solid #77f93e;
+    margin-left: 8px;
+}
+
+.center{
+    width: 980px;
+    height: 300px;
+    margin: auto;
+}
+
+.goods_img{
+    width: 250px;
+    height: 188px;
+    margin: -70px 0 0 20px;
+}
+
+.goods_name{
+    width: 500px;
+    height: 50px;
+    margin: -170px 0 0 270px;
+    padding: 16px;
+    color: gray;
+}
+
+.goods_name span{
+    font-size: 20px;
+    color: dimgray;
+    margin: 40px 0 0 20px;
+    line-height: 50px;
+}
+
+.goods_num{
+    width: 100px;
+    height: 50px;
+    margin: -10px 0 0 270px;
+    padding: 16px;
+    color: gray;
+}
+
+.goods_num span{
+    font-size: 20px;
+    color: dimgray;
+    margin: 40px 0 0 20px;
+    line-height: 50px;
+}
+
+.success{
+    height: 40px;
+    float: right;
+    margin-top: -170px;
+}
+
+.success_des{
+    font-size: 20px;
+    font-weight: bold;
+    color: dimgray;
+    letter-spacing: .15em;
+    float: right;
+    margin: 7px 10px;
+}
+
+.price{
+    width: 180px;
+    height: 40px;
+    float: right;
+    margin: -44px 12px;
+}
+
+.price span{
+    font-size: 26px;
+    color: red;
+}
+
+.cart_number{
+    width: 135px;
+    height: 20px;
+    float: right;
+    margin: -6px 12px;
+}
+
+.cart_number span{
+    color: red;
+}
+
+.back{
+    width: 200px;
+    height: 40px;
+    margin: 40px 560px;
+}
+
+.back input{
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    color: #85c125;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid #85c125;
+    cursor: pointer;
+}
+
+.go{
+    width: 200px;
+    height: 40px;
+    float: right;
+    margin-top: -80px;
+}
+
+.go input{
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    color: #f5f5f5;
+    font-weight: bold;
+    background-color: #85c125;
+    border: 1px solid #85c125;
+    cursor: pointer;
+}
+
+.moto{
+    width:100%;
+    height:70px;
+}
+
+.moto-Con{
+    width:100%;
+    height:100%;
+    border-bottom: 2px solid #353435;
+    margin: 60px auto;
+}
+
+.moto-Con a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size:42px;
+    font-family: "华文新魏";
+    color:dimgray;
+    margin: 0 auto;
+}
+
+.bottom {
+    margin: 10px auto;
+	text-align:center;
+	padding:10px;
+	line-height:30px;
+}
+
+.bottom a{
+	font-size:16px;
+	color:dimgray;
+	padding:10px;
+	line-height:30px;
+    text-decoration: none;
+}

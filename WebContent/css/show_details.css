@@ -1,0 +1,167 @@
+.show{
+    width: 980px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#magnifier{
+	width:374px;
+	height:280px;
+    margin: 150px 70px;
+	font-size:0;
+	border:1px solid #666;
+	overflow:hidden;
+}
+#img{
+ width:400px;
+ height:300px;
+}
+#asd{
+ border:1px solid #666;
+ z-index:100;
+ background:#555;
+}
+#mag{
+ border:1px solid #666;
+ overflow:hidden;
+ z-index:100;
+}
+
+.goods_con{
+    width: 400px;
+    height: 300px;
+    float: right;
+    margin: -430px 90px; 
+}
+
+.goods_name{
+    width:406px;
+    font-size: 26px;
+}
+
+.goods_price{
+    line-height: 32px;
+    width: 150px;
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size: 16px;
+    color: gray;
+}
+
+.goods_price span{
+    color: red;
+    font-size: 30px;
+    font-family: "华文新魏";
+    font-weight: bold;
+}
+
+.goods_birth{
+    font-size: 16px;
+    color: gray; 
+    width: 250px;
+    margin: 10px 0 20px 10px;
+}
+
+.goods_birth span{
+    color: dimgray;
+    font-family: "华文新魏";
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.goods_state{
+    font-size: 16px;
+    margin: 10px 0 20px 10px;
+    color: gray;
+    width: 200px;
+}
+
+.goods_state span{
+    color: dimgray;
+    font-family: "华文新魏";
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.goods_num{
+    font-size: 16px;
+    margin: 10px 0 20px 10px;
+    color: gray;
+    width: 280px;
+    margin: 6px 10px;
+}
+
+.min{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.num{
+    width: 40px;
+    height: 16px;
+    margin: 0 -6px;
+}
+
+.add{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.goods_num span{
+    font-size: 12px;
+}
+
+.btnBuy{
+    float: left;
+    margin-top: 20px;
+    border: 0;
+	width:144px;
+	height:39px;
+	line-height:18px;
+	font-size:18px;
+	background:url("../images/btn_buy.jpg") no-repeat left top;
+	color:#FFF;
+	padding-left:14px;
+    cursor: pointer;
+}
+
+.btnCart{
+    float:right;
+    margin-top: 20px;
+    margin-right: 60px;
+    border: 0;
+	width:144px;
+	height:39px;
+	line-height:18px;
+	font-size:18px;
+	background:url("../images/btn_cart.jpg") no-repeat left top;
+	color:#FFF;
+	padding-left:14px;
+    cursor: pointer;
+}
+
+.goods_des{
+    width: 800px;
+    margin: -100px 70px;
+}
+
+.goods_desTitle{
+    border: 1px solid #cecece;
+    font-size: 30px;
+    padding: 5px;
+    font-family:"FangSong";
+    color: gray;
+    font-weight: bold;
+}
+
+.goods_desCon{
+    width: 600px;
+    margin: 10px auto;
+    font-family: "YouYuan";
+    font-size: 20px;
+    line-height: 40px;
+    
+}
+

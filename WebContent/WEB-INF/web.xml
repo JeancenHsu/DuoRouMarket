@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <resource-ref>
+      <res-ref-name>jdbc/db</res-ref-name>
+      <res-type>javax.sql.DataSource</res-type>
+      <res-auth>Container</res-auth>
+  </resource-ref>
+  
+  <!-- <servlet>
+      <servlet-name>index</servlet-name>
+      <servlet-class>database.Operation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>index</servlet-name>
+      <url-pattern>/binfen.jsp</url-pattern>
+  </servlet-mapping> -->
+  <servlet>
+      <servlet-name>listGoods</servlet-name>
+      <servlet-class>servlet.ListGoodsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	  <servlet-name>listGoods</servlet-name>
+	  <url-pattern>/listGoods</url-pattern>
+  </servlet-mapping>
+  <servlet>
+      <servlet-name>goodsName</servlet-name>
+      <servlet-class>servlet.GoodsNameByCateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	  <servlet-name>goodsName</servlet-name>
+	  <url-pattern>/goodsName</url-pattern>
+  </servlet-mapping>
+  <servlet>
+      <servlet-name>goodsInfo</servlet-name>
+      <servlet-class>servlet.GoodsInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	  <servlet-name>goodsInfo</servlet-name>
+	  <url-pattern>/goodsInfo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+      <servlet-name>addCart</servlet-name>
+      <servlet-class>servlet.AddCartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	  <servlet-name>addCart</servlet-name>
+	  <url-pattern>/addCart</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+      <servlet-name>deleteCart</servlet-name>
+      <servlet-class>servlet.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	  <servlet-name>deleteCart</servlet-name>
+	  <url-pattern>/deleteCart</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+      <servlet-name>clearCart</servlet-name>
+      <servlet-class>servlet.ClearServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	  <servlet-name>clearCart</servlet-name>
+	  <url-pattern>/clearCart</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+      <servlet-name>dalesome</servlet-name>
+      <servlet-class>servlet.DalesomeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	  <servlet-name>dalesome</servlet-name>
+	  <url-pattern>/dalesome</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+      <servlet-name>updateCart</servlet-name>
+      <servlet-class>servlet.UpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	  <servlet-name>updateCart</servlet-name>
+	  <url-pattern>/updateCart</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+      <servlet-name>goodsCate</servlet-name>
+      <servlet-class>servlet.GoodsCateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	  <servlet-name>goodsCate</servlet-name>
+	  <url-pattern>/goodsCate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+      <servlet-name>searchGoods</servlet-name>
+      <servlet-class>servlet.SearchGoodsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	  <servlet-name>searchGoods</servlet-name>
+	  <url-pattern>/searchGoods</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+      <servlet-name>buyGoods</servlet-name>
+      <servlet-class>servlet.BuyGoodsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	  <servlet-name>buyGoods</servlet-name>
+	  <url-pattern>/buyGoods</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+      <servlet-name>submitOrder</servlet-name>
+      <servlet-class>servlet.SubmitOrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	  <servlet-name>submitOrder</servlet-name>
+	  <url-pattern>/submitOrder</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+      <servlet-name>addAddress</servlet-name>
+      <servlet-class>servlet.AddAddressServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	  <servlet-name>addAddress</servlet-name>
+	  <url-pattern>/addAddress</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+      <servlet-name>wholeAddress</servlet-name>
+      <servlet-class>servlet.AddressServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	  <servlet-name>wholeAddress</servlet-name>
+	  <url-pattern>/wholeAddress</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+      <servlet-name>showOrder</servlet-name>
+      <servlet-class>servlet.ShowOrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	  <servlet-name>showOrder</servlet-name>
+	  <url-pattern>/showOrder</url-pattern>
+  </servlet-mapping>
+  
+  <listener>
+      <listener-class>listener.CSessionListener</listener-class>
+  </listener>
+  
+  <filter>
+      <filter-name>myfilter</filter-name>
+      <filter-class>filter.UserFilter</filter-class>
+<!--       <init-param> -->
+<!--           <param-name>uri</param-name> -->
+<!--           <param-value>index.jsp,login.jsp,login,signin.jsp,signin2.jsp,register,register2,signin3.jsp,signinFail.jsp,loginFail.jsp,show.jsp,search,admin.jsp,shangcheng.jsp,show_details.jsp,goodsInfo</param-value> -->
+<!--       </init-param> -->
+  </filter>
+  <filter-mapping>
+      <filter-name>myfilter</filter-name>
+      <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+   <filter>
+      <filter-name>adminfilter</filter-name>
+      <filter-class>filter.adminFilter</filter-class>
+  </filter>
+  <filter-mapping>
+      <filter-name>adminfilter</filter-name>
+      <url-pattern>/admin/*</url-pattern>
+  </filter-mapping>
+  
+  <servlet>
+      <servlet-name>myservlet</servlet-name>
+      <servlet-class>servlet.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+      <servlet-name>myservlet</servlet-name>
+      <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+      <servlet-name>myservlet</servlet-name>
+      <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+      <servlet-name>myservlet</servlet-name>
+      <url-pattern>/register2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+      <servlet-name>myservlet</servlet-name>
+      <url-pattern>/exit</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+  	<servlet-name>AdminServlet</servlet-name>
+  	<servlet-class>servlet.AdminServlet</servlet-class>
+  	<init-param>
+  		<param-name>driver</param-name>
+  		<param-value>com.mysql.jdbc.Driver</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url</param-name>
+  		<param-value>jdbc:mysql://127.0.0.1:3306/duorou</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>user</param-name>
+  		<param-value>u1</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>password</param-name>
+  		<param-value>abc</param-value>
+  	</init-param>
+  	<init-param>
+     <param-name>savePath</param-name>
+     <param-value>uploads</param-value>
+    </init-param>
+  </servlet>
+  
+  
+  <servlet>
+    <servlet-name>ShowCatesServlet</servlet-name>
+    <servlet-class>servlet.ShowCatesServlet</servlet-class>
+    
+    <init-param>
+  		<param-name>driver</param-name>
+  		<param-value>com.mysql.jdbc.Driver</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url</param-name>
+  		<param-value>jdbc:mysql://127.0.0.1:3306/duorou</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>user</param-name>
+  		<param-value>u1</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>password</param-name>
+  		<param-value>abc</param-value>
+  	</init-param>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>ShowGoodsServlet</servlet-name>
+    <servlet-class>servlet.ShowGoodsServlet</servlet-class>
+    <init-param>
+  		<param-name>driver</param-name>
+  		<param-value>com.mysql.jdbc.Driver</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url</param-name>
+  		<param-value>jdbc:mysql://127.0.0.1:3306/duorou</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>user</param-name>
+  		<param-value>u1</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>password</param-name>
+  		<param-value>abc</param-value>
+  	</init-param>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>ShowUsersServlet</servlet-name>
+    <servlet-class>servlet.ShowUsersServlet</servlet-class>
+    <init-param>
+  		<param-name>driver</param-name>
+  		<param-value>com.mysql.jdbc.Driver</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url</param-name>
+  		<param-value>jdbc:mysql://127.0.0.1:3306/duorou</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>user</param-name>
+  		<param-value>u1</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>password</param-name>
+  		<param-value>abc</param-value>
+  	</init-param>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>ShowOrdersServlet</servlet-name>
+    <servlet-class>servlet.ShowOrdersServlet</servlet-class>
+    <init-param>
+  		<param-name>driver</param-name>
+  		<param-value>com.mysql.jdbc.Driver</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url</param-name>
+  		<param-value>jdbc:mysql://127.0.0.1:3306/duorou</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>user</param-name>
+  		<param-value>u1</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>password</param-name>
+  		<param-value>abc</param-value>
+  	</init-param>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>ShowOrderDetailServlet</servlet-name>
+    <servlet-class>servlet.ShowOrderDetailServlet</servlet-class>
+    <init-param>
+  		<param-name>driver</param-name>
+  		<param-value>com.mysql.jdbc.Driver</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url</param-name>
+  		<param-value>jdbc:mysql://127.0.0.1:3306/duorou</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>user</param-name>
+  		<param-value>u1</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>password</param-name>
+  		<param-value>abc</param-value>
+  	</init-param>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>AddGoodsServlet</servlet-name>
+    <servlet-class>servlet.AddGoodsServlet</servlet-class>
+    <init-param>
+  		<param-name>driver</param-name>
+  		<param-value>com.mysql.jdbc.Driver</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url</param-name>
+  		<param-value>jdbc:mysql://127.0.0.1:3306/duorou</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>user</param-name>
+  		<param-value>u1</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>password</param-name>
+  		<param-value>abc</param-value>
+  	</init-param>
+  </servlet>
+ 
+
+
+
+
+
+  <servlet-mapping>
+  	<servlet-name>AdminServlet</servlet-name>
+  	<url-pattern>/AdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowCatesServlet</servlet-name>
+    <url-pattern>/admin/ShowCates</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowGoodsServlet</servlet-name>
+    <url-pattern>/admin/ShowGoods</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowUsersServlet</servlet-name>
+    <url-pattern>/admin/ShowUsers</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowOrdersServlet</servlet-name>
+    <url-pattern>/admin/ShowOrders</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowOrderDetailServlet</servlet-name>
+    <url-pattern>/admin/ShowOrderDetail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddGoodsServlet</servlet-name>
+    <url-pattern>/admin/AddGoods</url-pattern>
+  </servlet-mapping>
+</web-app>

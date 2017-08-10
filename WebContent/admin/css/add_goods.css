@@ -1,0 +1,188 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background: #f5f5f5;
+    font-size: 14px;
+	font-family: 'Microsoft YaHei';    
+}
+
+.body{
+    width: 100%;
+    height: 1000px;
+    margin-top: 90px;
+/*    background-color: pink;*/
+    
+}
+
+.content{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    background-color:#fefaef;
+    
+}
+
+.content-left{
+    width: 300px;
+    height: 100%;
+    float: left;
+    background-color:#8ebe3e;
+    
+}
+
+.content-left span{
+    display: block;
+    margin-left: 35px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 22px;
+    color:white;
+}
+
+.content-left-list{
+    margin-left: 35px;    
+}
+
+.content-left-list a{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: "宋体";
+    font-weight: bold;
+    color: white;
+}
+
+.content-left-list a:hover{
+    color:dimgrey;
+}
+
+
+a,a:hover,a:visited{
+	text-decoration: none;
+}
+
+.content-right{
+    width: 900px;
+    height: 100%;
+    float: left;
+    background-color: white;  
+}
+
+.content-right-title{
+    margin-top: 50px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    color: #86c025;
+    font-size: 22px;
+    
+}
+
+.content-right form{
+    margin-left: 100px;
+}
+
+.content-right-form span{
+    font-size: 18px;
+    color: #86c025;
+}
+
+.form-1{
+    margin-bottom: 26px;
+}
+.content-right-form-text{
+    width: 200px;
+    height: 18px;
+    font-size: 14px;
+}
+
+.file-update{
+    width: 200px;
+    height: 20px;
+    font-size: 14px;
+}
+
+.select-cate,.select-state{
+    width: 204px;
+    height: 24px;
+    font-size: 16px;
+}
+
+.select-province,.select-city{
+    width: 100px;
+    height: 24px;
+    font-size: 16px;
+}
+
+.goods-description{
+    margin-top: 10px;
+    width: 500px;
+    height: 200px;
+    font-size: 14px;
+}
+
+.form-btns{
+    margin-top: 80px;
+    margin-left: 20px;
+    height: 30px;
+    
+}
+
+.form-btn-submit{
+    width: 80px;
+    height: 100%;
+    background-color:#86c025;
+    float: left;
+}
+
+.form-btn-submit:hover{
+    background-color:#b5db7c;
+    cursor:pointer;
+}
+
+.form-btn-submit input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: white;
+    font-family: "黑体";
+    font-size: 16px;
+    background: transparent;
+}
+
+.form-btn-submit input:hover{
+    cursor: pointer;
+}
+
+
+.form-btn-reset{
+    width: 80px;
+    height: 100%;
+    background-color:#86c025;
+    margin-left: 60px;
+    float: left;
+}
+
+.form-btn-reset:hover{
+    background-color:#b5db7c;
+    cursor:pointer;
+}
+
+.form-btn-reset input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: white;
+    font-family: "黑体";
+    font-size: 16px;
+    background: transparent;
+}
+
+.form-btn-reset input:hover{
+    cursor: pointer;
+}

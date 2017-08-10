@@ -1,0 +1,277 @@
+*{
+    margin: 0;padding: 0;
+    list-style: none;
+}
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background: #f5f5f5;
+    font-size: 14px;
+	font-family: 'Microsoft YaHei';    
+}
+
+a,a:hover,a:visited{
+	text-decoration: none;
+}
+
+.clear{
+	clear:both;
+}
+/*head导航条*/
+.head{
+    position: absolute;
+    top:0;
+    left:0px;
+	width:100%;
+	height: 90px;
+    background: white;
+    position: fixed;
+    opacity: 0.9;
+    z-index: 999;
+}
+
+.head-Con{
+    width:1200px;
+    height: 90px;
+    margin: 0 auto;
+}
+
+.head .nav{
+    width:510px;
+    height: 90px;
+    float: right;
+}
+
+.head .a1{
+    display: block;
+    width:40px;
+    height: 90px;
+    color:#333333;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    line-height: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.head .a2{
+    display: block;
+    height: 90px;
+    color:#333333;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    line-height: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width:120px;   
+}
+
+.head .nav a:hover{
+ 
+    color:#77f93e;
+    font-weight: bold;
+    border-bottom: 4px solid #77f93e;
+}
+
+
+/*搜索框*/
+#search_box {
+    margin: -55px 500px;
+    width: 201px; 
+    height: 31px; 
+    background: url(../images/bg_search_box.jpg); 
+} 
+#search_box #s { 
+    float: left; 
+    padding: 0; 
+    margin: 2px 3px; 
+    border: 0; 
+    width: 159px; 
+    background: none; 
+    font-size: 1.6rem; 
+} 
+#search_box #go {
+    border:none;
+    cursor: pointer;
+    background: url(../images/btn_search_box.jpg);
+    width: 27px;
+    height: 24px;
+    float: right; 
+    margin: 3px 4px 0 0; 
+} 
+
+.catbox{
+    width:571px;
+    margin:10px auto;
+}
+.add_address{
+    width:980px;
+    height:30px;
+    margin: 100px 10px;
+    padding-bottom: 12px;
+    background: #f5f5f5;
+}
+
+.add_address .title{
+    display: block;
+    color:#333333;
+    width:160px;
+    text-align: left;
+    float:left;
+    font-size: 20px;
+    border-left: 8px solid #77f93e; 
+    margin-left: 8px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.add{
+    margin: -80px 0;
+}
+.add td{
+    font-size: 16px;
+    color: #333333;
+}
+.recieve_name{
+    width: 120px;
+    text-align: right;
+}
+.input-name{
+    width: 340px;
+    height: 24px;
+    padding: 2px;
+}
+.recieve_phone{
+    text-align: right;
+}
+.input-phone{
+    width: 340px;
+    height: 24px;
+    padding: 2px;
+}
+.recieve_address{
+    text-align: right;
+}
+.province{
+    width: 170px;
+    height: 24px;
+    float: left;
+}
+.city{
+    width: 170px;
+    height: 24px;
+    float: right;
+}
+.select{
+    width: 170px;
+    height: 24px;
+}
+.recieve_detail_address{
+    text-align: right;
+}
+.input_detail_address{
+    width: 342px;
+    height: 54px;
+    padding: 2px;
+}
+.recieve_email{
+    text-align: right;
+}
+.input_email{
+    width: 340px;
+    height: 24px;
+    padding: 2px;
+}
+.address_operation{
+    height: 50px;
+}
+
+.save{
+    width: 220px;
+    height: 40px;
+    margin:0 auto;
+}
+.save input{
+    width: 220px;
+    height: 40px;
+    font-size: 20px;
+    color: #f5f5f5;
+    font-weight: bold;
+    background-color: #85c125;
+    border: 1px solid #85c125;
+    cursor: pointer;
+}
+.moto{
+    width:100%;
+    height:70px;
+}
+
+.moto-Con{
+    width:100%;
+    height:100%;
+    border-bottom: 2px solid #353435;
+    margin: 150px auto;
+}
+
+.moto-Con a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size:42px;
+    font-family: "华文新魏";
+    color:dimgray;
+    margin: 0 auto;
+}
+
+.bottom {
+    margin: 10px auto;
+	text-align:center;
+	padding:10px;
+	line-height:30px;
+}
+
+.bottom a{
+	font-size:16px;
+	color:dimgray;
+	padding:10px;
+	line-height:30px;
+    text-decoration: none;
+}
+
+
+.bottom_confirm{
+    width: 500px;
+    height: 100px;
+    margin: 170px 643px;
+    border: 1px solid #85c125;
+}
+
+.bottom_price{
+    height: 40px;
+    float: right;
+}
+
+.bottom_price span{
+    color: red;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.bottom_address{
+    height: 30px;
+    float: right;
+    line-height: 30px;
+}
+
+.bottom_name{
+    float: right;
+    height: 30px;
+    line-height: 30px;
+}
+
+

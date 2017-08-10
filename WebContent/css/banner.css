@@ -1,0 +1,91 @@
+/*banner 轮播*/
+.ppt{
+    width: 100%;
+    height: 800px;
+}
+
+.li{
+    width:1920px;
+    height: 800px;
+}
+
+.ppt{
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.ppt-con{
+    width: 5760px;
+    height: 120px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.li{
+    float: left;
+}
+
+.li:nth-child(1){
+    background-image: url(../images/bg01.jpg);
+}
+
+.li:nth-child(2){
+    background-image: url(../images/bg02.jpg);
+/*    z-index: 100;*/
+}
+
+.li:nth-child(3){
+    background-image: url(../images/bg03.jpg);
+}
+
+.show{
+   display: block; 
+}
+
+.left, .right{
+    width: 30px;
+    height: 60px;
+    background: black;
+    opacity: 0.3;
+    filter:alpha(opacity=30);
+    position: absolute;
+    top: 200px;
+    cursor: pointer;
+}
+
+.left{
+    left: 360px;
+}
+
+.right{
+    right: 360px;
+}
+
+.cicles{
+    width: 66px;
+    height: 14px;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    margin-left: -33px;
+    background: #353435;
+    border-radius: 10px;
+    padding: 10px 15px;
+    opacity: 0.8;
+}
+
+.cc{
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    -webkit-border-radius:7px;
+    margin: 0 4px;
+    background: #CCC;
+    float: left;
+}
+
+.h{
+    background: #77f93e;
+}

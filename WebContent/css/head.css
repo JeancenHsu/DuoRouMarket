@@ -1,0 +1,87 @@
+/*head导航条*/
+.head{
+    position: absolute;
+    top:0;
+    left:0px;
+	width:100%;
+	height: 90px;
+    background: white;
+    position: fixed;
+    opacity: 0.9;
+    z-index: 999;
+}
+
+.head-Con{
+    width:1200px;
+    height: 90px;
+    margin: 0 auto;
+}
+
+.nav{
+    width:510px;
+    height: 90px;
+    float: right;
+/*    background: #c4c3c4;*/
+}
+
+.a1{
+    display: block;
+    width:40px;
+    height: 90px;
+    color:#333333;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    line-height: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
+/*    border-bottom: 3px solid #77f93e;*/
+}
+
+.a2{
+    display: block;
+/*    width:40px;*/
+    height: 90px;
+    color:#333333;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    line-height: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width:120px;   
+}
+
+.nav a:hover{
+ 
+    color:#77f93e;
+    font-weight: bold;
+    border-bottom: 4px solid #77f93e;
+}
+
+
+/*搜索框*/
+#search_box {
+    margin: -55px 500px;
+    width: 201px; 
+    height: 31px; 
+    background: url(../images/bg_search_box.jpg); 
+} 
+#search_box #s { 
+    float: left; 
+    padding: 0; 
+    margin: 2px 3px; 
+    border: 0; 
+    width: 159px; 
+    background: none; 
+    font-size: 1.6rem; 
+} 
+#search_box #go {
+    border:none;
+    cursor: pointer;
+    background: url(../images/btn_search_box.jpg);
+    width: 27px;
+    height: 24px;
+    float: right; 
+    margin: 3px 4px 0 0; 
+} 

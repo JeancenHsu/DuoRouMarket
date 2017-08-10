@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context reloadable="true">  
+	<WatchedResource>WEB-INF/web.xml</WatchedResource>
+
+<!--
+	<ResourceLink global="jdbc/db1" name="jdbc/db11" type="javax.sql.DataSource"/>
+-->
+<Resource name="jdbc/db" auth="Container" type="javax.sql.DataSource" 
+    driverClassName="com.mysql.jdbc.Driver"
+    url="jdbc:mysql://127.0.0.1:3306/duorou"
+    username="u1" password="abc"
+    maxAcive="10" maxIdle="4"/>
+</Context>

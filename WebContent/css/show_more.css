@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background: #f5f5f5;
+    font-size: 14px;
+	font-family: 'Microsoft YaHei';    
+}
+
+a,a:hover,a:visited{
+	text-decoration: none;
+}
+
+.clear{
+	clear:both;
+}
+/*head导航条*/
+.head{
+    position: absolute;
+    top:0;
+    left:0px;
+	width:100%;
+	height: 90px;
+    background: white;
+    position: fixed;
+    opacity: 0.9;
+    z-index: 999;
+}
+
+.head-Con{
+    width:1200px;
+    height: 90px;
+    margin: 0 auto;
+}
+
+.head .nav{
+    width:510px;
+    height: 90px;
+    float: right;
+}
+
+.head .a1{
+    display: block;
+    width:40px;
+    height: 90px;
+    color:#333333;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    line-height: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.head .a2{
+    display: block;
+    height: 90px;
+    color:#333333;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    line-height: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width:120px;   
+}
+
+.head .nav a:hover{
+    color:#77f93e;
+    font-weight: bold;
+    border-bottom: 4px solid #77f93e;
+}
+/*搜索框*/
+#search_box {
+    margin: -55px 500px;
+    width: 201px; 
+    height: 31px; 
+    background: url(../images/bg_search_box.jpg); 
+} 
+#search_box #s { 
+    float: left; 
+    padding: 0; 
+    margin: 2px 3px; 
+    border: 0; 
+    width: 159px; 
+    background: none; 
+    font-size: 1.6rem; 
+} 
+#search_box #go {
+    border:none;
+    cursor: pointer;
+    background: url(../images/btn_search_box.jpg);
+    width: 27px;
+    height: 24px;
+    float: right; 
+    margin: 3px 4px 0 0; 
+} 
+
+.binfen-top{
+    width:1104px;
+    height:30px;
+    padding-bottom: 12px;
+    background: #f5f5f5;
+    margin: 104px 0 0 130px;
+}
+
+.binfen-top .title{
+    display: block;
+    color:#333333;
+    width:280px;
+    text-align: left;
+    float:left;
+    font-size: 20px;
+    border-left: 8px solid #77f93e; 
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+
+.binfen-bottom {
+    width: 100%;
+    margin-left: 140px;
+}
+
+.binfen-bottom-in{
+    width: 250px;
+    height: 444px;
+    margin-right: 10px;
+    float: left;
+    background: #ffffff;
+    border:8px solid #f5f5f5;
+}
+
+
+.binfen-bottom-in:hover{
+    border:8px solid #e4e4e4;
+}
+
+.binfen-bottom-in-last:hover{
+    border:8px solid #e4e4e4;
+}
+
+.pic01{
+    width: 250px;
+    height: 187px;
+}
+
+.content01-title{
+    height: 60px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.content01-title a{
+    font-size: 20px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.content01-title a:hover{
+    font-size: 20px;
+    color: #77f93e;
+    text-decoration:underline;
+}
+
+.content01-article{
+    margin: 30px 30px;
+}
+
+.content01-article p{
+    width: 70px;
+    color: red;
+    font-size: 30px;
+    font-family: "华文新魏";
+    font-weight: bold;
+    margin:0 auto;
+}
+
+.button{
+    width: 140px;
+    line-height: 38px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    text-shadow:1px 1px 1px #333;
+    border-radius: 5px;
+    margin:30px 25px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button.green{
+border:1px solid #64c878;
+box-shadow: 0 1px 2px #b9ecc4 inset,0 -1px 0 #6c9f76 inset,0 -2px 3px #b9ecc4 inset;
+background: -webkit-linear-gradient(top,#90dfa2,#84d494);
+background: -moz-linear-gradient(top,#90dfa2,#84d494);
+background: linear-gradient(top,#90dfa2,#84d494);
+}
+
+.green:hover{
+background: -webkit-linear-gradient(top,#aaebb9,#82d392);
+background: -moz-linear-gradient(top,#aaebb9,#82d392);
+background: linear-gradient(top,#aaebb9,#82d392);
+}
+.footer{
+    margin: 0px auto;
+}
+.moto{
+    width:100%;
+    height:70px;
+}
+
+.moto-Con{
+    width:1200px;
+    height:100%;
+    border-bottom: 2px solid #353435;
+    margin: 50px auto;
+}
+
+.moto-Con a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size:42px;
+    font-family: "华文新魏";
+    color:dimgray;
+    margin: 0 auto;
+}
+
+.bottom {
+    margin: 10px auto;
+	text-align:center;
+	padding:10px;
+	line-height:30px;
+}
+
+.bottom a{
+	font-size:16px;
+	color:dimgray;
+	padding:10px;
+	line-height:30px;
+    text-decoration: none;
+}
